@@ -1,0 +1,1091 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+  body {
+    background-color: black; 
+    color: white;
+    overflow-x: hidden;
+    width:100%;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Mokoto Glitch Mark';
+  src: url("Mokoto Glitch Mark.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overmind Demons';
+  src: url("C:\Users\LENOVO\OneDrive\Desktop\symp\Overmind Demons-bf97.woff2") format('woff2'),
+       url("C:\Users\LENOVO\OneDrive\Desktop\symp\Overmind Demons-2ae8.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.rmkcetname
+{
+  margin-left: 10%;
+  margin-top: 3%;
+  position: absolute;
+}
+.clglogo
+{
+  position: absolute;
+  margin-left: -33%;
+  margin-top: 1%;
+  width: 140px;
+  height: 122px;
+}
+.deptname
+{
+  margin-left: 13%;
+  margin-top: 6%;
+  position: absolute;
+}
+
+
+.bbgg{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+
+}
+
+.section{
+  height: 100vh;
+  background-color: transparent;
+  border: none;
+}
+
+
+
+/* Styles for loading screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black; /* Change the background color as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top of other elements */
+  overflow: hidden;
+}
+
+.typing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/*  .small-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeInAndEnlarge 4s forwards; /* Animation to gradually fade in and enlarge the image (adjust duration) */
+}  */
+
+@keyframes fadeInAndEnlarge {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Apply the custom font to the title */
+.@keyframes glowAnimation {
+0% {
+background-position: 0% 50%;
+}
+100% {
+background-position: 100% 50%;
+}
+}
+
+.typing-title {
+font-family: 'Mokoto Glitch Mark', sans-serif;
+font-size: 24px; /* Adjust font size as needed */
+color: white; /* Set text color to white */
+text-shadow: 0 0 10px #7ed957, 0 0 20px #7ed957, 0 0 30px #7ed957; /* Add text shadow for glow effect */
+animation: glowAnimation 3s linear infinite; /* Apply the glow animation */
+}
+
+/* Style only the letter 'X' */
+.x-letter {
+  font-family: 'Mokoto Glitch Mark', sans-serif;
+  font-size: 50px; /* Adjust font size as needed */
+  color: white; /* Set text color to white */
+  text-shadow: 0 0 10px #5271ff, 0 0 20px #5271ff, 0 0 30px #5271ff;
+}
+
+.k24 {
+font-family: 'Mokoto Glitch Mark', sans-serif;
+font-size: 30px; /* Adjust font size as needed */
+color: white; /* Set text color to white */
+text-shadow: 0 0 10px #5e17eb, 0 0 20px #5e17eb, 0 0 30px #5e17eb;
+margin-top: 5px; /* Add margin to create space between main title and subtitle */
+animation: fadeIn 1s forwards;
+}
+
+.k24{
+  animation-delay: 2s;
+}
+
+
+/* Hide the loading screen */
+.loading-screen.hide {
+  display: none;
+}
+
+
+
+
+.navbar {
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex; /* Update to flexbox for horizontal layout */
+  }
+  
+  .navbar ul li {
+    margin-right: 100px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: white; /* Set text color to white */
+  text-shadow: 0 0 10px #5e17eb, 0 0 20px #5e17eb, 0 0 30px #5e17eb;
+  font-size: 20px;
+}
+
+  .symposium-name {
+    text-align: center;
+    /* Adjust as needed for vertical positioning */
+  }
+  
+
+
+
+.button{
+  margin-top: 50px;
+  margin-bottom: 200px;
+  margin-left: 38%;
+  width: 22%;
+  height: 50px;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: 'Mokoto Glitch Mark',sans-serif;
+  color: white; 
+  text-shadow: 0 0 10px #7bcbdb, 0 0 20px #7bcbdb, 0 0 30px #7bcbdb;
+  background-color:rgba(255,255,255,.2) ;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.button:hover{
+  color: white;
+
+  font-size: 28px;
+   text-shadow: 0 0 10px #194149, 0 0 20px #194149, 0 0 30px #194149; 
+   
+}
+
+
+/*
+
+.countdown-timer {
+  display: inline-block !important;
+  padding: 10px !important;
+  width: 40% !important;
+  height: 50% !important;
+  text-decoration: none !important;
+  font-size: 40px !important;
+  margin-left: 30%;
+  visibility: hidden !important;
+  /* Add any other styles you need 
+}
+
+*/
+
+
+.registration{
+  font-family: 'Mokoto Glitch Mark', sans-serif !important;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 10px #7bcbdb, 0 0 20px #7bcbdb, 0 0 30px #7bcbdb;
+  text-align: center; 
+  height:100px;
+  width:100%;
+  margin-top:105%;
+}
+
+
+  .about-section {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: safe;
+    height: 600px;
+    margin: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    flex-direction: row-reverse;
+    margin-left: 10%;
+    line-height: 35px;
+    
+
+    }
+    
+    .about-description {
+   
+      width: 50%;
+      font-size: 25px;
+      text-align: justify;
+
+    }
+    
+    .head {
+      font-family: 'Mokoto Glitch Mark', sans-serif;
+      font-size: 30px;
+      color: white;
+      text-shadow: 0 0 10px #5e17eb, 0 0 20px #5e17eb, 0 0 30px #5e17eb;
+      margin-left: 12%;
+    }
+    .about-description ul{
+      font-size: 20px;
+    }
+    .about-images {
+      width: 47%;
+      height: 110%;
+       /* Adjust width as needed */
+    }
+    
+    .about-images img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px; /* Space between images */
+    }
+
+
+.section-2{
+  width: 1000px;
+  height: 1500px;
+}
+
+    .events a{
+      width:40%;
+      text-decoration: none;
+      margin: 20px;
+      color: aqua;
+      font-weight: bold;
+      justify-content: center;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+      margin: 10px;
+      margin-left: 5%;
+      margin-top: 40px;
+  }
+  
+  .event-header{
+    font-family: 'Mokoto Glitch Mark',sans-serif;  
+    font-size: 30px;
+    width:50%;
+    color: white; 
+    text-shadow: 0 0 10px #5e17eb, 0 0 20px #5e17eb, 0 0 30px #5e17eb; width: 100%;
+    margin-left: 8%; 
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+  .event-box{
+      position: relative;
+      border: 1px solid white;
+      border-radius: 10px;
+      width:40%;
+      height: 400px;
+      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      float: left;
+      background-color: transparent;
+      margin-left: 60%;
+  
+  }
+  .image{
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    border: none; 
+    border-radius: 10px; 
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)
+     z-index: 2;
+  }
+  
+  .event-date{
+      position: absolute;
+      font-size: 17px;
+      display: inline-block;
+      bottom: 10px;
+  }
+  .event-desc{
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background-color: transparent;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      transition: transform 0.8s cubic-bezier(0.25, 1.2, 0.25, 1);
+      
+  }
+  
+  .header{
+      color: aqua;
+      opacity: 1;
+      margin-top: 100px;
+      font-family: 'Mokoto Glitch Mark',sans-serif;
+  }
+
+  .event-box .image{
+    order: 2;
+  }
+  
+  .event-desc .hid{
+      font-size: 10px;
+  }
+  
+  .event-desc .desc{
+      position: absolute;
+      font-size: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+      top: 125px;
+      line-height: 25px;
+  }
+  
+  .event-desc h2{
+      position: relative;
+      top: 15px;
+      border: none;
+      font-size: 30px;
+  
+  }
+  .event-desc .reg{
+      background-color: rgba(255, 254, 254, 0.1) ;
+      border: none;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      position: absolute;
+      bottom: 40px;
+      left: 140px;
+      cursor: pointer;
+      color:white ;
+      font-weight: bolder;
+  }
+  
+  .event-box:hover .event-desc{
+      opacity: 0.9;
+  }
+  
+  .event-box:hover .event-date{
+      opacity: 0;
+  }
+  
+  
+  .event-box:hover .image:active{
+      transition: transform 0.5s ease-out; /* Transition on mouse release (after hover) */
+      transform: scale(1);
+  }
+  
+  .event-box:hover .header-desc{
+      opacity: 0;
+  }
+  
+  .event-box:hover .header{
+      color: white;
+      display: none;
+  }
+  
+  .event-box:hover .hid{
+      display: none;
+  }
+  
+  .event-box:hover .image{
+      opacity: 0.1;
+  }
+  
+  .event-box:hover .event-desc{
+      opacity: 1;
+  }
+  
+  .event-box:hover .event-desc:active{
+      transition: opacity 0.5s ease-out; /* Transition on mouse release */
+      opacity: 0;
+  
+  }
+  
+  .countdown-timer{
+    position: relative; 
+    overflow: hidden; 
+    display: inline-block; 
+    width: 100%; 
+    height: 500px; 
+    margin-left: 0%;
+    margin-right:9%;
+  }
+
+.header{
+    color:whitesmoke;
+    opacity: 1;
+    margin-top: 30%;
+    font-size: 35px;
+
+}
+.loc-head{
+  font-family: 'Mokoto Glitch Mark',sans-serif;  
+  font-size: 30px;color: white; 
+  text-shadow: 0 0 10px #5e17eb, 0 0 20px #5e17eb, 0 0 30px #5e17eb; 
+  width: 100%; 
+  text-align: center;
+}
+.loc-coll{
+  justify-content: center; 
+  text-align: center; 
+  padding-top: 40px; 
+  font-size: 25px;
+}
+.loc-add{
+  justify-content: center; 
+  text-align: center; 
+  margin: 20px;  
+  font-family: sans-serif; 
+  color:#6b83ed ; 
+  font-size: 16px;
+}
+
+
+
+
+@media(max-width:732px){
+    
+
+    .x-letter{
+      font-size: 400%;
+      margin-left: 0%;
+    }
+    .k24{
+      font-size: 250%;
+    }
+      body{
+        padding: 0px;
+        width:200%;
+      }
+
+      #home{
+        height: 1000px;
+      }
+
+      #home img{
+        display:flex;
+        
+      }
+      #home .clglogo
+      {
+        display:flex;
+        width: 70%;
+        height:auto;
+        margin-left: 0%;
+      }
+
+      .navbar {
+        width: 70px;
+        background-color: #555;
+
+      }
+    
+      .navbar ul {
+        /* Modify layout for smaller screens, e.g., change to a dropdown menu */
+        flex-direction: column;
+        
+      }
+    
+      .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin: 2px;
+        border-bottom: 1px black;
+        padding: 5px;
+        justify-content: center;
+        text-align: center;
+      }
+      .navbar{
+        display: none;
+      }
+      .kaali{
+        width:150%;
+        height :225%;
+        margin-left: 25%;
+        margin-top: 25%;
+        padding-top: 120px;
+      }
+      .rmkcetname
+      {
+        width: 400%;
+        font-size: 60px;
+        margin-top: 15%;
+        margin-left: 17%;
+      }
+      .deptname
+      {
+        width: 400%;
+        font-size: 45px;
+        margin-top: 48%;
+      }
+      .clglogo
+      {
+        width: 20%;
+        height: 50%;
+      }
+      .about-description ul{
+        font-size: 40px;
+        width:200%;
+        height: 110%;
+        justify-content: center;
+        margin-left: 15%;
+        margin-top: 10%;
+        line-height: 55px;
+        margin-bottom: 5%;;
+      }
+      .head{
+        font-size: 80px;
+        justify-content: center;
+        margin-left: 25%;
+        margin-top: 150%;
+        width:200%;
+      }
+      .about-section{
+        display: flex;
+        flex-direction: column;
+        width:150%;
+      }
+      .about-images{
+        width:150%;
+        height:1550px;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+      }
+
+      .events .event-box
+      {
+        margin-bottom: 3%;
+      }
+
+
+      .events{
+        display:flex;
+      flex-direction: column;
+      padding-left: 0px; 
+       margin-top: 275%;
+       margin-bottom: 20%;
+       margin-left: 0%;
+       width:400%;
+       height:300%;
+
+      }
+
+    .event-header {
+      max-width: fit-content;
+      width:100px;
+      height: 10%;
+      font-size: 100px;
+      margin-left: 15%;
+      text-align: center;
+      margin-top: 7%;
+      justify-content: center;
+    }
+
+      .event-box{
+        width:100px;
+        height:930px;
+        margin-left: 0%;
+        border: none;
+      }
+      .event-box a{
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 10%;
+        margin:10px;
+        padding-right: 10px;
+
+      }
+      .event-box .image
+      {
+        border-radius: 100px;
+      }
+      .event-desc
+      {
+        display: none;
+      }
+      .header{
+        color: whitesmoke;
+        margin-top: 50%;
+        font-size: 89px;
+      }
+
+      .event-date p{
+        margin-bottom: 10%;
+        font-size: 44px;
+      }
+      
+        .registration {
+          width: 150%; /* Adjust as needed */
+          margin-top: 50%;
+          margin-left: 20%;
+          font-size: 50px;
+      }
+    
+      .countdown-timer{
+        width: 200%;
+        height: 70vh;
+         margin-left: -4%;
+        margin-top: 10%;
+      }
+      #but{
+        text-align: center;
+        margin-top: 20px;
+      }
+      .button{
+        width: 100%;
+        margin-left:45% ;
+        font-size: 70px;
+        margin-bottom: 10%;
+        height:200%;
+        margin-top: 20%;
+      }
+      .loc-head{
+        margin-top: 20%;
+      }
+}
+
+.foot_2_1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1.8vw;
+}
+
+.foot_2, .foot_2_1 {
+  flex-direction: row;
+}
+
+.line_4 {
+  height: 1.2vw;
+}
+
+.line_3, .line_4 {
+  width: 0.1vw;
+  background: rgba(255,255,255,.2);
+}
+
+.line_4 {
+  height: 1.2vw;
+}
+
+.line_3, .line_4 {
+  width: 0.1vw;
+  background: rgba(255,255,255,.2);
+}
+
+.f_end {
+  height: 2vw;
+}
+
+.footer {
+  height: 20.5vw;
+  color: #fff;
+  font-family: jura;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.line_5 {
+  height: 0.1vw;
+  width: 100%;
+  background: rgba(255,255,255,.2);
+}
+
+.footer {
+  height: 20.5vw;
+  color: #fff;
+  font-family: jura;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.foot_1 {
+  height: 20vw;
+  width: 100%;
+  display: flex;
+}
+
+.foot_1_1 {
+  height: 100%;
+  width: 40;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1.2vw;
+}
+
+.foot_1_1, .foot_1_2_1 {
+  flex-direction: column;
+}
+
+
+.foot_1_2 {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4vw;
+  margin-right: 2vw;
+}
+
+.foot_1_2, .foot_2 {
+  width: 100%;
+  display: flex;
+}
+
+.title_font {
+  font-family: prak;
+  font-size: 4.2vw;
+  font-stretch: expanded;
+}
+
+.line_2 {
+  width: 24.5vw;
+  height: 0.1vw;
+}
+
+.line {
+  width: 9vw;
+  height: 0.1vw;
+  background: rgba(255,255,255,.2);
+}
+
+div {
+  display: block;
+}
+.footer {
+  height: 20.5vw;
+  color: #fff;
+  font-family: jura;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.foot_desc_title {
+  font-family: Jura;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1vw;
+  line-height: 2.4vw;
+  letter-spacing: .12em;
+  letter-spacing: .17vw;
+}
+
+.eve_sec_con a, .link_cur, .nigus {
+  text-decoration: none;
+  color: inherit;
+}
+.acol, a {
+  color: #fff;
+}
+
+.foot_1_2_1 {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1.8vw;
+}
+
+.foot_1_1, .foot_1_2_1 {
+  flex-direction: column;
+}
+
+.foot_1_2_1_title {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 900;
+  letter-spacing: .2vw;
+}
+
+.foot_1_2_1_list {
+  flex-wrap: nowrap;
+  gap: 1vw;
+}
+
+.about_inner, .foot_1_2_1_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot_1_2_1_list_item {
+  font-size: .8vw;
+  color: rgba(255,255,255,.8);
+}
+
+.eve_sec_con a, .link_cur, .nigus {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.line_3 {
+  height: 10vw;
+}
+
+.line_3, .line_4 {
+  width: 0.1vw;
+  background: rgba(255,255,255,.2);
+}
+
+.container-location {
+  background-color: rgba(255, 254, 254, 0.1) ;
+  box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
+  margin-top: 50px;
+  margin-left: 25%;
+  width: 50%;
+  height:80% ;
+  color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+}
+
+.location {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loc{
+  width: 80%;
+  height: 400px;
+  margin: 50px;
+  justify-content: center;
+  text-align: center;
+  filter: invert(90%);
+}
+
+
+.coordinator-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 5%;
+  
+}
+
+.coordinator-section {
+  flex: 1;
+  max-width: 350px; /* Adjust as needed */
+  margin-top: 20px;
+  border: 1px solid none;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 254, 254, 0.1) ;
+  box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
+}
+
+.coordinator-container h2 {
+  color: ghostwhite;
+}
+
+.coordinator-member {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.designation {
+  color: white;
+}
+
+.contactus{
+  font-family: 'Mokoto Glitch Mark', sans-serif !important;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 10px #7bcbdb, 0 0 20px #7bcbdb, 0 0 30px #7bcbdb;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.developer {
+  display: flex;
+  margin-left: 25%;
+}
+
+.developer span {
+  padding: 10px; /* Adjust as needed */
+  margin-right: 10px;
+}
+@media (max-width: 600px) {
+    .loc-head{
+      margin-left: 0%;
+      font-size: 120px;
+      width: 200%;
+      margin-top:20%;
+    }
+    .container-location {
+      width:175%; 
+      height: 1000%; 
+      margin-left: 10%;
+      margin-top:20%;
+  }
+  .loc-coll{
+    font-size: 65px;
+  }
+  .loc-add{
+    font-size: 45px;
+  }
+  .loc{
+    width:90%;
+    height:700px;
+    margin:50px;
+    justify-content: center;
+    text-align: center;
+    filter:invert(90%);
+  }
+  .contactus{
+    font-size: 60px;
+    margin-left: 100%;
+    margin-top:45%;
+  }
+  .coordinator-member{
+    margin-top:16%;
+    font-size: 36px;
+  }
+  .designation{
+    margin-top:-7%;
+    font-size: 30px;
+  }
+ .coordinator-head{
+  margin-top: 10%;
+ }
+  .coordinator-container{
+    display:flex;
+    flex-direction: row;
+    margin-left: -26%;
+    width: 250%;
+    margin-top: 15%;
+  }
+  .coordinator-section{
+    width:100%;
+    height:500px;
+    padding: 50px;
+    font-size: 34px;
+  }
+  .footer{
+    width:200%;
+    margin-top:14%;
+    margin-left: 25%;
+  }
+  .foot_desc_title{
+    display:none;
+  }
+  .foot_desc{
+    display:none;
+  }
+  .title_font{
+    display: none;
+  }
+  .foot_1_2_1{
+    width: 30%;
+    margin-top: 15%;
+    margin-left: -9%;;
+    margin-bottom: 5%;
+  }
+  .foot_1_2_1_title{
+    font-size: 50px;
+  }
+  .foot_1_2_1_list_item{
+    font-size: 35px;
+  }
+  .line_3{
+    margin-right: 16%;
+    margin-top:10%;
+    width:5px;
+    height:250px;
+    margin-left:-12%;
+  }
+  .developer{
+    font-size: 30px;
+    margin-top: 26%;
+    margin-left: 22%;
+    margin-bottom:4%;
+    width:200%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
