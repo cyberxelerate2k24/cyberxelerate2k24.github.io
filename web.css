@@ -571,10 +571,10 @@ animation: fadeIn 1s forwards;
       }
       .rmkcetname
       {
-        width: 400%;
-        font-size: 60px;
+        width: 375%;
+        font-size: 58px;
         margin-top: 15%;
-        margin-left: 17%;
+        margin-left: 42%;
       }
       .deptname
       {
@@ -642,7 +642,7 @@ animation: fadeIn 1s forwards;
       font-size: 100px;
       margin-left: 15%;
       text-align: center;
-      margin-top: 7%;
+      margin-top: 15%;
       justify-content: center;
     }
 
