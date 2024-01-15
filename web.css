@@ -1079,6 +1079,23 @@ div {
 
 }
 
+@media only screen and (max-width: 768px) {
+  .event-box:hover .event-desc,
+  .event-box:hover .event-date,
+  .event-box:hover .image,
+  .event-box:hover .header,
+  .event-box:hover .hid {
+    opacity: 1;
+  }
+
+  .event-box:hover .image:active,
+  .event-box:hover .event-desc:active {
+    transition: none;
+    transform: none;
+    opacity: 0;
+  }
+}
+
 
 
 
